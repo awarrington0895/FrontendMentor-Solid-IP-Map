@@ -1,0 +1,18 @@
+@import 'vars.css';
+
+.block {
+  position: relative;
+}
+
+.block:after {
+  content: '';
+  position: absolute;
+  border-left: 1px solid var(--dark-grey);
+  right: -10px;
+  top: 2px;
+  height: 80%;
+}
+
+.block:last-child:after {
+  display: none; /* Hide the divider for the last block */
+}
